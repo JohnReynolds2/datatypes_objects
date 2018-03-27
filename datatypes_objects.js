@@ -21,66 +21,64 @@
 // //4. access hobby
 // console.log(johnPaul.hobby);
 
-//console.log(solarSystem[4].moons)
-//console.log(solarSystem[7].moons[1])
-//solarSystem[1].moons[0] = "Endor"
-//solarSystem[1].moons[1] = "Endor2"
-//console.log(solarSystem[1].moons[0])
-//console.log(solarSystem.push("Pluto"));
-// function newPlanet(name, ringSystem, moons) {
-//     this.name = name,
-//     this.ringSystem = ringSystem,
-//     this.moons = moons
-// }
-// solarSystem.push(newPlanet(pluto, false, Charon));
-
-// const newPluto = {
-//     name: "Pluto",
-//     ringSystem: false,
-//     moons: "Charon"
+// //Commit 3 - Crazy Object!
+// const crazyObject = {
+//   taco: [{meat: 'steak',
+//          cheese: ['panela', 'queso', 'chihuahua']},
+//          {meat: 'chicken',
+//           salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]},
+//         ],
+//   larry: {
+//     nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+//     quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+//     characters: [{
+//       name: "Jeff",
+//       occupation: "manager"
+//     },
+//     {
+//       name: "funkhauser",
+//       occupation: "tv dude"
+//     },
+//     {
+//       name: "susie",
+//       occupation: "jeffs wife",
+//       favourtieHobby: "Swearing at Larry and Jeff"
+//     },
+//     ]
+//   }
 // };
+// //1. omg my mouth is burning
+// console.log(crazyObject.taco[1].salsa[5]);
+// //2.pretty pretty good
+// console.log(crazyObject.larry.quotes[0]);
+// //3. Swearing at larry and jeff
+// console.log(crazyObject.larry.characters[2].favourtieHobby);
+// //4. chicken teriyaki boy
+// console.log(crazyObject.larry.nicknames[1]);
+// //5. object containing funkhauser
+// console.log(crazyObject.larry.characters[1]);
 
-// solarSystem.push(newPluto);
-// console.log(solarSystem)
-
-//Commit 3 - Crazy Object!
-const crazyObject = {
-  taco: [{meat: 'steak',
-         cheese: ['panela', 'queso', 'chihuahua']},
-         {meat: 'chicken',
-          salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]},
-        ],
-  larry: {
-    nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
-    quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
-    characters: [{
-      name: "Jeff",
-      occupation: "manager"
-    },
-    {
-      name: "funkhauser",
-      occupation: "tv dude"
-    },
-    {
-      name: "susie",
-      occupation: "jeffs wife",
-      favourtieHobby: "Swearing at Larry and Jeff"
-    },
-    ]
-  }
+//Commit 4 - Accessed Limbo
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
 };
-//1. omg my mouth is burning
-console.log(crazyObject.taco[1].salsa[5]);
-//2.pretty pretty good
-console.log(crazyObject.larry.quotes[0]);
-//3. Swearing at larry and jeff
-console.log(crazyObject.larry.characters[2].favourtieHobby);
-//4. chicken teriyaki boy
-console.log(crazyObject.larry.nicknames[1]);
-//5. object containing funkhauser
-console.log(crazyObject.larry.characters[1]);
-
-
+//Change the Value to Null
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6. limbo = null);
+console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6);
 
 
 
