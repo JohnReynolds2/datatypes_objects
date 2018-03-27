@@ -117,24 +117,27 @@ const bondFilms = [
 // //displaying the final array
 // console.log(bondTitles);
 
-//Commit 6 - Odd Bonds
-//empty array to push odd year titles to
-oddBonds = [];
-//for loop that has an if statement saying that 'if the year has a remainder (meaning it is odd) than push it to the array'
-for (i =0; i < bondFilms.length; i++) {
-	if (bondFilms[i].year % 2 !== 0) {
-		oddBonds.push(bondFilms[i].title);
-	}
+// //Commit 6 - Odd Bonds
+// //empty array to push odd year titles to
+// oddBonds = [];
+// //for loop that has an if statement saying that 'if the year has a remainder (meaning it is odd) than push it to the array'
+// for (i =0; i < bondFilms.length; i++) {
+// 	if (bondFilms[i].year % 2 !== 0) {
+// 		oddBonds.push(bondFilms[i].title);
+// 	}
+// }
+// //displaying final array of odd year bond films.
+// console.log(oddBonds);
+
+//Commit 7 - Bond Film Gross
+
+totalSum = [];
+
+for (i = 0; i < bondFilms.length; i++) {
+	dollarSignString = bondFilms[i].gross.replace(/,/g , "");
+	grossNumbers = dollarSignString.replace('$', '');
+	totalSum += grossNumbers;
 }
-//displaying final array of odd year bond films.
-console.log(oddBonds);
-
-
-
-
-
-
-
-
-
-
+console.log(totalSum);
+//=> 11085610080101494111719122575122825110761375654441946927137525669789482665587240076485144698622246378957627796410543639638115295487111250589978213491617153144864688811547894640216448249281174407590721842624435219381088866203211726332128515719122
+//couldn't quite get it to work. ended up with a giant concatenated number.
