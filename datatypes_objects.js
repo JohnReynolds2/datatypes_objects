@@ -131,13 +131,12 @@ const bondFilms = [
 
 //Commit 7 - Bond Film Gross
 
-totalSum = [];
+totalSum = 0;
 
 for (i = 0; i < bondFilms.length; i++) {
-	dollarSignString = bondFilms[i].gross.replace(/,/g , "");
-	grossNumbers = dollarSignString.replace('$', '');
-	totalSum += grossNumbers;
+	dollarSignString = bondFilms[i].gross;
+	grossNumbers = dollarSignString.replace(/,/g , "").replace('$', '');
+	totalSum += Number(grossNumbers);
 }
 console.log(totalSum);
-//=> 11085610080101494111719122575122825110761375654441946927137525669789482665587240076485144698622246378957627796410543639638115295487111250589978213491617153144864688811547894640216448249281174407590721842624435219381088866203211726332128515719122
-//couldn't quite get it to work. ended up with a giant concatenated number.
+//=> 13821621224
