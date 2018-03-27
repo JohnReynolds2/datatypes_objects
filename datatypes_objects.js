@@ -107,16 +107,27 @@ const bondFilms = [
   { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
-//Create a new array called bondTitles with only the titles of the Bond films, and console.log the new array.
-//empty array to push titles to
-bondTitles = [];
-//for loop identifying titles and pushing them to empty array each loop
-for (i = 0; i < bondFilms.length; i++) {
-	bondTitles.push(bondFilms[i].title);
-}
-//displaying the final array
-console.log(bondTitles);
+// //Create a new array called bondTitles with only the titles of the Bond films, and console.log the new array.
+// //empty array to push titles to
+// bondTitles = [];
+// //for loop identifying titles and pushing them to empty array each loop
+// for (i = 0; i < bondFilms.length; i++) {
+// 	bondTitles.push(bondFilms[i].title);
+// }
+// //displaying the final array
+// console.log(bondTitles);
 
+//Commit 6 - Odd Bonds
+//empty array to push odd year titles to
+oddBonds = [];
+//for loop that has an if statement saying that 'if the year has a remainder (meaning it is odd) than push it to the array'
+for (i =0; i < bondFilms.length; i++) {
+	if (bondFilms[i].year % 2 !== 0) {
+		oddBonds.push(bondFilms[i].title);
+	}
+}
+//displaying final array of odd year bond films.
+console.log(oddBonds);
 
 
 
